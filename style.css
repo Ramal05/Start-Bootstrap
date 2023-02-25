@@ -1,0 +1,362 @@
+body {
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+}
+
+.imgbox {
+  overflow: hidden;
+}
+.imgbox img {
+  width: 100%;
+}
+
+section {
+  padding: 100px;
+}
+
+header {
+  padding: 24px 0;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-color: #212529;
+}
+header .imgbox {
+  width: 140px;
+}
+header .imgbox img {
+  cursor: pointer;
+}
+header nav {
+  position: relative;
+}
+header nav a {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8705882353);
+  margin-right: 30px;
+}
+header nav a:hover {
+  transition: 0.5s;
+  color: #ffc400;
+  cursor: pointer;
+}
+
+#welcome {
+  background-image: url("Assets/1.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 750px;
+}
+#welcome .textbox {
+  padding-top: 170px;
+}
+#welcome .textbox h1 {
+  font-size: 40px;
+  color: white;
+}
+#welcome .textbox h3 {
+  font-weight: 700;
+  font-size: 80px;
+  color: white;
+  margin: 30px 0 60px;
+}
+#welcome .textbox .btn {
+  padding: 19px 54px;
+  background-color: #ffc800;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+}
+#welcome .textbox .btn:hover {
+  background-color: #d9ac08;
+}
+
+#services {
+  text-align: center;
+}
+#services .textbox h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+#services .textbox h3 {
+  font-size: 18px;
+  color: #677179;
+  margin: 20px 0 65px;
+}
+#services .textbox h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+#services .textbox p {
+  font-size: 19px;
+  color: #6c757d;
+  line-height: 1.5;
+  margin: 20px;
+}
+#services .textbox li {
+  width: 10px;
+  height: 10px;
+  padding: 64px;
+  background-color: #ffca00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 70px;
+  margin: auto;
+}
+#services .textbox li .icon {
+  color: white;
+}
+#services .textbox li .icon i {
+  font-size: 64px;
+}
+
+#portfolio {
+  background-color: #f9f9fa;
+}
+#portfolio h1 {
+  font-weight: 700;
+  font-size: 50px;
+}
+#portfolio h3 {
+  font-size: 18px;
+  color: #6c757d;
+  margin: 20px 0 40px;
+}
+#portfolio .box {
+  background-color: white;
+  height: 380px;
+  margin-top: 25px;
+}
+#portfolio .box .imgbox {
+  position: relative;
+}
+#portfolio .box .imgbox li {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 200, 0, 0.9019607843);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#portfolio .box .imgbox li .icon {
+  color: white;
+}
+#portfolio .box .imgbox li .icon i {
+  font-size: 60px;
+}
+#portfolio .box .imgbox li:hover {
+  opacity: 1;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#portfolio .box .textbox {
+  text-align: center;
+}
+#portfolio .box .textbox h2 {
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 25px;
+}
+#portfolio .box .textbox h4 {
+  font-size: 18px;
+  color: #6a7279;
+  margin-top: 10px;
+}
+
+#about h1 {
+  font-weight: 700;
+  font-size: 50px;
+}
+#about h3 {
+  font-size: 18px;
+  color: #6c757d;
+  margin: 20px 0 65px;
+}
+#about .box {
+  position: relative;
+}
+#about .box .imgbox {
+  border-radius: 50%;
+  border: 7px solid #e9ecef;
+  background-color: #ffc800;
+  width: 170px;
+  height: 170px;
+  margin-bottom: 190px;
+}
+#about .box .textbox {
+  position: absolute;
+  right: 210px;
+  width: 300px;
+}
+#about .box h2 {
+  font-weight: 700;
+  font-size: 30px;
+  margin: 0 0 10px;
+}
+#about .box p {
+  font-size: 18px;
+  color: #636c74;
+  line-height: 1.5;
+  margin-top: 15px;
+}
+#about .box h4 {
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  padding: 37px;
+  font-size: 22px;
+  line-height: 1.2;
+}
+#about .text {
+  left: 210px;
+}
+
+#team {
+  background-color: #f9f9fa;
+}
+#team h1 {
+  font-weight: 700;
+  font-size: 50px;
+  margin-bottom: 25px;
+}
+#team h3 {
+  font-size: 19px;
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+#team .box {
+  padding: 40px 65px;
+}
+#team .box .imgbox {
+  border: 8px solid #e1e1e1;
+  border-radius: 50%;
+  width: 225px;
+}
+#team .box .textbox {
+  text-align: center;
+}
+#team .box .textbox h2 {
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 20px;
+}
+#team .box .textbox h4 {
+  font-size: 18px;
+  color: #6c757d;
+  margin: 10px 0;
+}
+#team .box ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+#team .box ul li {
+  margin: 10px;
+  background-color: #212529;
+  border-radius: 70px;
+  padding: 20px;
+  width: 10px;
+  height: 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#team .box ul li:hover {
+  border: 4px solid #888f96;
+  margin: 6px;
+  cursor: pointer;
+}
+#team .wid {
+  width: 710px;
+  line-height: 1.5;
+}
+
+#logo {
+  padding: 64px;
+}
+#logo .imgbox img {
+  height: 44px;
+}
+#logo .imgbox img:hover {
+  cursor: pointer;
+}
+
+#contact {
+  background-color: #212529;
+  background-image: url("Assets/2.png");
+  background-position: center;
+}
+#contact .textbox h1 {
+  font-weight: 700;
+  color: white;
+  font-size: 50px;
+}
+#contact .textbox h3 {
+  color: #6c757d;
+  font-size: 18px;
+  margin: 20px 0 40px;
+}
+#contact input, #contact textarea {
+  font-weight: 700;
+  border: 1px solid #ced4da;
+  width: 546px;
+  font-size: 18px;
+  margin-top: 24px;
+  padding: 21px;
+}
+#contact .btn {
+  padding: 19px 52px;
+  background-color: #ffc800;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  opacity: 0.6;
+  margin-top: 46px;
+}
+
+footer {
+  padding: 14px;
+}
+footer .textbox h1 {
+  color: #5d6566;
+  font-size: 18px;
+}
+footer .textbox h4 {
+  margin-left: 20px;
+  color: #5d6566;
+  font-size: 18px;
+}
+footer .textbox h4:hover {
+  cursor: pointer;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+footer ul li {
+  margin: 10px;
+  background-color: #212529;
+  border-radius: 70px;
+  padding: 20px;
+  width: 10px;
+  height: 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer ul li:hover {
+  border: 4px solid #888f96;
+  margin: 6px;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
