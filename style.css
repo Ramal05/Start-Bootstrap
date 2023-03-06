@@ -46,7 +46,7 @@ header .menu nav {
   margin-right: 90px;
 }
 header .menu nav a {
-  font-size: 18px;
+  font-size: 19px;
   margin: 0 20px;
 }
 header .menu nav a:hover {
@@ -263,18 +263,20 @@ header .menu nav a:hover {
 
 #team {
   background-color: #f9f9fa;
+  padding-bottom: 50px;
 }
 #team h1 {
   font-weight: 700;
   font-size: 50px;
-  margin-bottom: 20px;
 }
 #team h3 {
   font-size: 20px;
   color: #6c757d;
+  margin: 20px 0 65px;
 }
 #team .box {
-  padding: 65px;
+  display: flex;
+  justify-content: center;
 }
 #team .box .imgbox {
   border: 8px solid #e1e1e1;
@@ -282,84 +284,101 @@ header .menu nav a:hover {
   width: 225px;
   height: 225px;
 }
-#team .box .textbox {
+#team .textbox {
   text-align: center;
 }
-#team .box .textbox h2 {
+#team .textbox h2 {
   font-weight: 700;
   font-size: 30px;
   margin-top: 20px;
 }
-#team .box .textbox h4 {
+#team .textbox h4 {
   font-size: 18px;
   color: #6c757d;
   margin: 10px 0;
 }
-#team .box ul {
+#team ul {
   display: flex;
   justify-content: center;
   flex-direction: row;
 }
-#team .box ul li {
+#team ul li {
   margin: 10px;
   background-color: #212529;
   border-radius: 30px;
   width: 40px;
   height: 40px;
   color: white;
+  font-size: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#team .box ul li:hover {
-  border: 4px solid #888f96;
+#team ul li:hover {
+  border: 3px solid #888f96;
   cursor: pointer;
-  border-radius: 30px;
 }
 #team .wid {
   width: 710px;
   line-height: 1.4;
+  margin-top: 15px;
 }
 
 #logo {
-  padding: 64px;
+  padding: 64px 0;
 }
-#logo .imgbox img {
-  height: 44px;
+#logo .box .imgbox {
+  width: 120px;
 }
-#logo .imgbox img:hover {
+#logo .box .imgbox img {
   cursor: pointer;
+}
+#logo .box .mic {
+  width: 200px;
+}
+#logo .box .fac {
+  width: 165px;
+}
+#logo .box .ibm {
+  width: 110px;
 }
 
 #contact {
   background-color: #212529;
   background-image: url("Assets/2.png");
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
 }
 #contact .textbox h1 {
   font-weight: 700;
   color: white;
   font-size: 50px;
+  margin-bottom: 20px;
 }
 #contact .textbox h3 {
   color: #6c757d;
   font-size: 20px;
-  margin: 20px 0 40px;
 }
-#contact input {
+#contact .add {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+#contact .add input {
   font-weight: 700;
   border: 1px solid #ced4da;
-  width: 100%;
-  font-size: 18px;
-  margin-top: 24px;
-  padding: 21px;
+  font-size: 20px;
+  margin: 14px 0;
+  padding: 20px;
 }
-#contact textarea {
+#contact .box {
+  margin-top: 65px;
+  display: flex;
+}
+#contact .box textarea {
   font-weight: 700;
+  font-size: 20px;
   border: 1px solid #ced4da;
-  font-size: 18px;
-  margin-top: 24px;
   padding: 20px;
   border-radius: 5px;
 }
@@ -369,8 +388,8 @@ header .menu nav a:hover {
   color: white;
   font-weight: 700;
   font-size: 20px;
-  opacity: 0.6;
-  margin-top: 48px;
+  opacity: 0.7;
+  margin-top: 34px;
 }
 
 footer {
