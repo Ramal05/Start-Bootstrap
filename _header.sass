@@ -10,6 +10,8 @@ header
         .imgbox
             width: 140px
             margin-left: 120px
+            img
+                cursor: pointer
         .btn
             color: #ffff
             display: flex
@@ -29,26 +31,4 @@ header
                 margin: 0 20px
                 &:hover
                     color: #f3c41a
-
-    @media screen and ( max-width: 991px )
-        .menu
-            display: flex
-            justify-content: space-around
-            nav
-                display: none
-            .btn
-                display: flex
-                margin-right: 30px
-
-    @media screen and ( max-width: 576px )
-        .menu
-            width: 413px
-            display: flex
-            justify-content: space-around
-            .imgbox
-                margin-left: 20px
-
-    @media screen and ( max-width: 376px)
-        .menu
-            width: 373px
-            height: 85px
+                    cursor: pointer

@@ -27,6 +27,9 @@ header .menu .imgbox {
   width: 140px;
   margin-left: 120px;
 }
+header .menu .imgbox img {
+  cursor: pointer;
+}
 header .menu .btn {
   color: white;
   display: flex;
@@ -51,35 +54,7 @@ header .menu nav a {
 }
 header .menu nav a:hover {
   color: #f3c41a;
-}
-@media screen and (max-width: 991px) {
-  header .menu {
-    display: flex;
-    justify-content: space-around;
-  }
-  header .menu nav {
-    display: none;
-  }
-  header .menu .btn {
-    display: flex;
-    margin-right: 30px;
-  }
-}
-@media screen and (max-width: 576px) {
-  header .menu {
-    width: 413px;
-    display: flex;
-    justify-content: space-around;
-  }
-  header .menu .imgbox {
-    margin-left: 20px;
-  }
-}
-@media screen and (max-width: 376px) {
-  header .menu {
-    width: 373px;
-    height: 85px;
-  }
+  cursor: pointer;
 }
 
 #welcome {
@@ -92,16 +67,18 @@ header .menu nav a:hover {
   display: flex;
   align-items: center;
 }
+#welcome .box .textbox {
+  margin-top: 65px;
+}
 #welcome .box .textbox h1 {
   font-size: 40px;
   color: white;
-  margin-top: 65px;
 }
 #welcome .box .textbox h3 {
   font-weight: 700;
   font-size: 90px;
   color: white;
-  margin: 40px 0;
+  margin: 25px 0 60px 0;
 }
 #welcome .box .textbox .btn {
   padding: 19px 54px;
@@ -123,6 +100,17 @@ header .menu nav a:hover {
   color: #677179;
   margin: 20px 0 65px;
 }
+#services .textbox h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+#services .textbox p {
+  font-size: 19px;
+  color: #6c757d;
+  line-height: 1.5;
+  margin: 20px;
+}
 #services .box {
   display: flex;
   justify-content: center;
@@ -137,17 +125,6 @@ header .menu nav a:hover {
   justify-content: center;
   align-items: center;
   border-radius: 70px;
-}
-#services h2 {
-  font-size: 30px;
-  font-weight: 700;
-  margin-top: 15px;
-}
-#services p {
-  font-size: 19px;
-  color: #6c757d;
-  line-height: 1.5;
-  margin: 20px;
 }
 
 #portfolio {
@@ -222,12 +199,12 @@ header .menu nav a:hover {
 #about .box .textbox {
   position: absolute;
   width: 310px;
-  right: 240px;
+  right: 210px;
 }
 #about .box .textbox h2 {
   font-weight: 700;
   font-size: 30px;
-  margin: 10px 0;
+  margin-bottom: 10px;
 }
 #about .box .textbox p {
   font-size: 19px;
@@ -240,10 +217,9 @@ header .menu nav a:hover {
   background-color: #ffc800;
   width: 170px;
   height: 170px;
-  margin: 0 30px;
 }
 #about .right {
-  left: 240px;
+  left: 210px;
 }
 #about .part {
   border-radius: 90px;
@@ -368,18 +344,18 @@ header .menu nav a:hover {
   font-weight: 700;
   border: 1px solid #ced4da;
   font-size: 20px;
-  margin: 14px 0;
+  margin: 13px 0;
   padding: 20px;
 }
 #contact .box {
-  margin-top: 65px;
+  margin-top: 64px;
   display: flex;
 }
 #contact .box textarea {
   font-weight: 700;
   font-size: 20px;
   border: 1px solid #ced4da;
-  padding: 20px;
+  padding: 18px;
   border-radius: 5px;
 }
 #contact .btn {
@@ -415,17 +391,16 @@ footer ul {
 footer ul li {
   margin: 10px;
   background-color: #212529;
-  border-radius: 70px;
-  padding: 20px;
-  width: 10px;
-  height: 10px;
+  border-radius: 30px;
+  width: 40px;
+  height: 40px;
   color: white;
+  font-size: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 footer ul li:hover {
-  border: 4px solid #888f96;
-  margin: 6px;
+  border: 3px solid #888f96;
   cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
